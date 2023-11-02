@@ -2,15 +2,15 @@
 
 
 ## Slice 2 > Bad Data 
-Autocorrelation.m 
-Cubic_int.m
-KSpace_Spatial.m
-lowpassfilt.m
-Optimal_filter.m
-optimalfusing.m
-prediction.m
-SL_detection.m
-smoothing.m
+Autocorrelation.m  
+Cubic_int.m  
+KSpace_Spatial.m   
+lowpassfilt.m   
+Optimal_filter.m   
+optimalfusing.m   
+prediction.m   
+SL_detection.m    
+smoothing.m    
 
 
 ## Slice 2
