@@ -14,7 +14,7 @@ smoothing.m
 
 
 ## Slice 2
-evalFilt.m
+evalFilt.m.   
 evalRecon.m
 
 These files have also been applied to slice 1, 3-8 and are replicas of slice 2 aside from naming conventions. Therefore, for demonstrative purposes only slide 2 is included as there is no additional information gained through the other slides.
