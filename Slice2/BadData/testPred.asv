@@ -1,0 +1,32 @@
+clc; clear all; close all;
+
+load('slice2_channel1.mat');
+load('slice2_channel2.mat');
+load('slice2_channel3.mat');
+
+% for temporary testing purposes
+load('slice2_channel1_gauKS.mat')
+load('slice2_channel1_gauKS.mat')
+load('slice2_channel1_gauKS.mat')
+whos
+
+file_path = '/Users/anja/Documents/Delft/Q1/SDSPM/project/MRI_datasets/Slice2/GoodData/';
+load(file_path);
+
+% B - k-space bad
+% G - k-space good
+% M - 512
+    % N - 128
+    % O - order
+    % p - 32
+
+o = 10;
+p = 32;
+
+slice2_channel1_pred = Pf(slice2_channel1_badData, slice2_channel1_gauKS, 512, 128, o, p)
+slice2_channel2_pred = Pf(slice2_channel2_badData, slice2_channel1_gauKS, 512, 128, o, p)
+slice2_channel3_pred = Pf(slice2_channel3_badData, slice2_channel1_gauKS, 512, 128, o, p)
+
+%save('slice2_channel1_cub.mat', 'slice2_channel1_cub');
+%save('slice2_channel2_cub.mat', 'slice2_channel2_cub');
+%save('slice2_channel3_cub.mat', 'slice2_channel3_cub');
